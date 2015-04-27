@@ -1,0 +1,50 @@
+testing specs for recipes:
+name: string
+summary: text
+description: text
+
+- name must ne present
+- name must be between 5 characters and less than 100 characters
+- summaru must be present
+- summary must be between 10 characters and less than 150 characters
+- descript must be present
+- description must be between 20 characters and 500 characters.
+- chef_id must be present
+- chefname must be present
+- chef name must be between 3 characters and less than 40 characters
+- email must be present
+- email must be unique (since we'll use this for log ins later)
+- email must be valid
+
+ already did
+- Chef Model and validations
+- chefs table with columns chefname and email
+
+need to do:
+- Add passwords to the chef table so chefs can be authenticated and logged in
+- Use email as log in credentials, since email is unique
+- Ability to register new chefs to use the app
+- Ability to show chefs profile
+- Ability to list chefs using the app
+- Abiltity for chefs to log in and log out of the app
+- Restring likes and create recipe for chefs that are logged in only
+- Restricting edit to chefs who created the recipe only
+
+
+-------------Subhajit Banerjee-------------------------
+Gravatar image api for ruby
+
+# include MD5 gem, should be part of standard ruby install
+require 'digest/md5'
+
+# get the email from URL-parameters or what have you and make lowercase
+email_address = params[:email].downcase
+
+# create the md5 hash
+gravar_id = Digest::MD5.hexdigest(email_address)
+
+# compile URL which can be used in <img src="RIGHT_HERE"...
+image_src = "http://www.gravatar.com/avatar/#{hash}"
+
+--------------image upload-----------------------
+<a href="http://imgur.com/NVk36XE”>
