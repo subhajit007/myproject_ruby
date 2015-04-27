@@ -14,7 +14,7 @@ gem 'carrierwave', '0.10.0'
 gem 'mini_magick', '3.8.0'
 gem 'will_paginate', '3.0.7'
 #This will ensure latest version of gem ‘will_paginate’ being used with your Rails Application
-
+gem 'figaro'
 gem 'bootstrap-will_paginate', '0.0.10'
 gem 'bcrypt', '3.1.7'
 #password protection gem
